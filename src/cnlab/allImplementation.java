@@ -22,7 +22,7 @@ public class allImplementation implements allInterfaces {
     }
 
     @Override
-    public void StrIP2Dec(String input) {
+    public boolean StrIP2Dec(String input) {
         String decimalIP=input.trim();
 //        String currentIP;
 
@@ -30,12 +30,13 @@ public class allImplementation implements allInterfaces {
         try {
             ipBit = convertStrIP2IntIP(decimalIP);
         } catch (Exception e) {
-            return;
+            return false;
         }
 //        currentIP=decimalIP;
         String ip=convertIPIntDec2StringBinary(ipBit);
 //        String hexIP=convertIPIntDec2StringHex(ipBit);
         System.out.println("ip = " +ip);
+        return true;
     }
 
     @Override
