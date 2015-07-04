@@ -1,7 +1,7 @@
 package cnlab;
 
 
-public class allImplementation implements allInterfaces {
+public class IPv4Implementation implements IPv4nterfaces {
     @Override
     public String convertIPIntDec2StringBinary(int ip_int) {
         String ip_string;
@@ -35,7 +35,7 @@ public class allImplementation implements allInterfaces {
 //        currentIP=decimalIP;
         String ip=convertIPIntDec2StringBinary(ipBit);
 //        String hexIP=convertIPIntDec2StringHex(ipBit);
-        System.out.println("ip = " +ip);
+       // System.out.println("ip = " +ip);
         return true;
     }
 

@@ -39,23 +39,35 @@ public class CalculateCIDR extends javax.swing.JFrame {
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        inputIPView = new javax.swing.JTextField();
-        cidrView = new javax.swing.JTextField();
+        inputIPv4View = new javax.swing.JTextField();
+        cidrIPv4View = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        netmaskIPView = new javax.swing.JTextField();
-        noOfHostsView = new javax.swing.JTextField();
+        netmaskIPv4View = new javax.swing.JTextField();
+        noOfHostsIPv4View = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        nwAddrView = new javax.swing.JTextField();
-        broadcastAddrView = new javax.swing.JTextField();
+        nwAddrIPv4View = new javax.swing.JTextField();
+        broadcastAddrIPv4View = new javax.swing.JTextField();
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
-        firstIPAddrView = new javax.swing.JTextField();
-        lastIPAddrView = new javax.swing.JTextField();
+        firstIPAddrIPv4View = new javax.swing.JTextField();
+        lastIPAddrIPv4View = new javax.swing.JTextField();
         clearFields = new javax.swing.JButton();
         calculateAddressButton = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        inputIPv6View = new javax.swing.JTextField();
+        cidrIPv6View = new javax.swing.JTextField();
+        jLabel11 = new javax.swing.JLabel();
+        noOfHostsIPv6View = new javax.swing.JTextField();
+        jLabel12 = new javax.swing.JLabel();
+        startIPAddrIPv6View = new javax.swing.JTextField();
+        jLabel13 = new javax.swing.JLabel();
+        lastIPAddrIPv6View = new javax.swing.JTextField();
+        clearButton = new javax.swing.JButton();
+        calculateIPv6Button = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -84,25 +96,25 @@ public class CalculateCIDR extends javax.swing.JFrame {
 
         jLabel4.setText("No. of Hosts");
 
-        netmaskIPView.setEditable(false);
+        netmaskIPv4View.setEditable(false);
 
-        noOfHostsView.setEditable(false);
+        noOfHostsIPv4View.setEditable(false);
 
         jLabel5.setText("Network Address");
 
         jLabel6.setText("Broadcast Address");
 
-        nwAddrView.setEditable(false);
+        nwAddrIPv4View.setEditable(false);
 
-        broadcastAddrView.setEditable(false);
+        broadcastAddrIPv4View.setEditable(false);
 
         jLabel7.setText("First  usable IP Address");
 
         jLabel8.setText("Last Usable IP Address");
 
-        firstIPAddrView.setEditable(false);
+        firstIPAddrIPv4View.setEditable(false);
 
-        lastIPAddrView.setEditable(false);
+        lastIPAddrIPv4View.setEditable(false);
 
         clearFields.setText("Clear");
         clearFields.addActionListener(new java.awt.event.ActionListener() {
@@ -126,28 +138,28 @@ public class CalculateCIDR extends javax.swing.JFrame {
                 .addGap(50, 50, 50)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jLabel1)
-                    .addComponent(inputIPView, javax.swing.GroupLayout.DEFAULT_SIZE, 160, Short.MAX_VALUE)
+                    .addComponent(inputIPv4View, javax.swing.GroupLayout.DEFAULT_SIZE, 160, Short.MAX_VALUE)
                     .addComponent(jLabel3)
                     .addComponent(jLabel5)
-                    .addComponent(nwAddrView)
+                    .addComponent(nwAddrIPv4View)
                     .addComponent(jLabel7)
-                    .addComponent(firstIPAddrView)
-                    .addComponent(netmaskIPView))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 50, Short.MAX_VALUE)
+                    .addComponent(firstIPAddrIPv4View)
+                    .addComponent(netmaskIPv4View))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 80, Short.MAX_VALUE)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                         .addComponent(jLabel2)
                         .addComponent(jLabel4)
-                        .addComponent(noOfHostsView, javax.swing.GroupLayout.DEFAULT_SIZE, 160, Short.MAX_VALUE)
+                        .addComponent(noOfHostsIPv4View, javax.swing.GroupLayout.DEFAULT_SIZE, 160, Short.MAX_VALUE)
                         .addComponent(jLabel6)
-                        .addComponent(broadcastAddrView)
+                        .addComponent(broadcastAddrIPv4View)
                         .addComponent(jLabel8)
-                        .addComponent(lastIPAddrView))
+                        .addComponent(lastIPAddrIPv4View))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addComponent(clearFields)
                         .addGap(18, 18, 18)
                         .addComponent(calculateAddressButton))
-                    .addComponent(cidrView, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(cidrIPv4View, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(50, 50, 50))
         );
         jPanel2Layout.setVerticalGroup(
@@ -159,32 +171,32 @@ public class CalculateCIDR extends javax.swing.JFrame {
                     .addComponent(jLabel2))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(inputIPView, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(cidrView, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(inputIPv4View, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(cidrIPv4View, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
                     .addComponent(jLabel4))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(netmaskIPView, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(noOfHostsView, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(netmaskIPv4View, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(noOfHostsIPv4View, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5)
                     .addComponent(jLabel6))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(nwAddrView, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(broadcastAddrView, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(nwAddrIPv4View, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(broadcastAddrIPv4View, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel7)
                     .addComponent(jLabel8))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(firstIPAddrView, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lastIPAddrView, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(firstIPAddrIPv4View, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lastIPAddrIPv4View, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(clearFields)
@@ -194,15 +206,105 @@ public class CalculateCIDR extends javax.swing.JFrame {
 
         jTabbedPane4.addTab("IPv4 Address", jPanel2);
 
+        jLabel9.setText("IPv6 Address");
+
+        jLabel10.setText("CIDR");
+
+        inputIPv6View.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                inputIPv6ViewActionPerformed(evt);
+            }
+        });
+
+        jLabel11.setText("Number of Hosts");
+
+        noOfHostsIPv4View.setEditable(false);
+
+        jLabel12.setText("Starting IP address");
+
+        startIPAddrIPv6View.setEditable(false);
+
+        jLabel13.setText("Last Usable IP Address");
+
+        lastIPAddrIPv6View.setEditable(false);
+
+        clearButton.setText("Clear");
+        clearButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                clearButtonActionPerformed(evt);
+            }
+        });
+
+        calculateIPv6Button.setText("Calculate");
+        calculateIPv6Button.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                calculateIPv6ButtonActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(23, 23, 23)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel9)
+                            .addComponent(inputIPv6View, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 68, Short.MAX_VALUE)
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel10)
+                            .addComponent(cidrIPv6View, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(29, 29, 29))
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel11)
+                            .addComponent(noOfHostsIPv6View, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jLabel13)
+                            .addComponent(jLabel12)
+                            .addComponent(startIPAddrIPv6View)
+                            .addComponent(lastIPAddrIPv6View, javax.swing.GroupLayout.DEFAULT_SIZE, 290, Short.MAX_VALUE))
+                        .addGap(0, 0, Short.MAX_VALUE))))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(clearButton, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(calculateIPv6Button)
+                .addContainerGap())
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel9)
+                    .addComponent(jLabel10))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(inputIPv6View, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(cidrIPv6View, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addComponent(jLabel11)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(noOfHostsIPv6View, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel12)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(startIPAddrIPv6View, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel13)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(lastIPAddrIPv6View, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 29, Short.MAX_VALUE)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(clearButton)
+                    .addComponent(calculateIPv6Button))
+                .addContainerGap())
         );
 
         jTabbedPane4.addTab("IPv6 Address", jPanel3);
@@ -227,19 +329,19 @@ public class CalculateCIDR extends javax.swing.JFrame {
 
     private void clearFieldsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_clearFieldsActionPerformed
         
-        inputIPView.setText("");
-        cidrView.setText("");
-        netmaskIPView.setText("");
-        noOfHostsView.setText("");
-        nwAddrView.setText("");
-        broadcastAddrView.setText("");
-        firstIPAddrView.setText("");
-        lastIPAddrView.setText("");
-        inputIPView.requestFocus();
+        inputIPv4View.setText("");
+        cidrIPv4View.setText("");
+        netmaskIPv4View.setText("");
+        noOfHostsIPv4View.setText("");
+        nwAddrIPv4View.setText("");
+        broadcastAddrIPv4View.setText("");
+        firstIPAddrIPv4View.setText("");
+        lastIPAddrIPv4View.setText("");
+        inputIPv4View.requestFocus();
     }//GEN-LAST:event_clearFieldsActionPerformed
 
     private void calculateAddressButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_calculateAddressButtonActionPerformed
-        allImplementation allImplementation1 = new allImplementation();
+        IPv4Implementation allImplementation1 = new IPv4Implementation();
          final String IPv4Address_PATTERN =
                 "^([01]?\\d\\d?|2[0-4]\\d|25[0-5])\\." +
                         "([01]?\\d\\d?|2[0-4]\\d|25[0-5])\\." +
@@ -247,8 +349,8 @@ public class CalculateCIDR extends javax.swing.JFrame {
                         "([01]?\\d\\d?|2[0-4]\\d|25[0-5])$";
          Pattern pattern = Pattern.compile(IPv4Address_PATTERN);
         
-         String input =inputIPView.getText().trim();
-         String temp_subnetMask= cidrView.getText().trim();
+         String input =inputIPv4View.getText().trim();
+         String temp_subnetMask= cidrIPv4View.getText().trim();
         int subnetMask=0,maximumHosts;
         String ipAdd ="";
         String cidr = "";
@@ -257,24 +359,24 @@ public class CalculateCIDR extends javax.swing.JFrame {
         if((temp_subnetMask.isEmpty()) || (input.isEmpty() && !matcher.matches())){
             if(input.isEmpty() || !matcher.matches()){
                 JOptionPane.showMessageDialog(null, "IP address error");
-                inputIPView.requestFocus();
+                inputIPv4View.requestFocus();
                 return;
             }            
             if( temp_subnetMask.isEmpty()){
                 JOptionPane.showMessageDialog(null, "CIDR");
-                cidrView.requestFocus();
+                cidrIPv4View.requestFocus();
                 return;
             }   
         }else if(!correctIP){
             JOptionPane.showMessageDialog(null, "Please put proper IP address");
-            inputIPView.requestFocus();
+            inputIPv4View.requestFocus();
             return;
         }else{
                 allImplementation1.StrIP2Dec(input);
                 subnetMask = Integer.parseInt(temp_subnetMask);
                 if(subnetMask<0 || subnetMask > 32){
                     JOptionPane.showMessageDialog(null, "CIDR");
-                    cidrView.requestFocus();
+                    cidrIPv4View.requestFocus();
                     return;
                 }
         }
@@ -309,13 +411,46 @@ public class CalculateCIDR extends javax.swing.JFrame {
         int netmaskVal=(~bitMaskValue);
         String binaryNetmask = allImplementation1.convertIntIP2StrIP(netmaskVal);
 
-        netmaskIPView.setText(""+binaryNetmask);
-        noOfHostsView.setText(""+maximumHosts);
-        firstIPAddrView.setText(firstIPAddress);
-        lastIPAddrView.setText(lastIPAddress);
-        broadcastAddrView.setText(broadCastAddress);
-        nwAddrView.setText(networkAddress);
+        netmaskIPv4View.setText(""+binaryNetmask);
+        noOfHostsIPv4View.setText(""+maximumHosts);
+        firstIPAddrIPv4View.setText(firstIPAddress);
+        lastIPAddrIPv4View.setText(lastIPAddress);
+        broadcastAddrIPv4View.setText(broadCastAddress);
+        nwAddrIPv4View.setText(networkAddress);
     }//GEN-LAST:event_calculateAddressButtonActionPerformed
+
+    private void inputIPv6ViewActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_inputIPv6ViewActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_inputIPv6ViewActionPerformed
+
+    private void calculateIPv6ButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_calculateIPv6ButtonActionPerformed
+        Ipv6Implementation parsed = new Ipv6Implementation();
+        String ipv6Address = inputIPv6View.getText();
+        String subnetValue = cidrIPv6View.getText();
+        boolean result;
+//        result = parsed.parse("2605:2700:0:3::4713:93e3/127");
+        result = parsed.parse(ipv6Address+"/"+subnetValue);
+		if(result){
+                        startIPAddrIPv6View.setText(parsed.startHostAddressIP);
+                        lastIPAddrIPv6View.setText(parsed.lastHostAddressIP);
+                        noOfHostsIPv6View.setText(""+(int)parsed.getNumberOfHosts());
+			System.out.println("Is it a valid IP address " + result);	
+//			parsed.displayHostIpInfo();
+		}
+		else{
+			System.out.println("Wrong IP Format");			
+		}
+		result = parsed.parse("2605:2700:0:3::4713:93e3");
+    }//GEN-LAST:event_calculateIPv6ButtonActionPerformed
+
+    private void clearButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_clearButtonActionPerformed
+        inputIPv6View.setText(null);
+        cidrIPv6View.setText(null);
+        noOfHostsIPv6View.setText(null);
+        startIPAddrIPv6View.setText(null);
+        lastIPAddrIPv6View.setText(null);
+        inputIPv6View.requestFocus();
+    }//GEN-LAST:event_clearButtonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -352,13 +487,21 @@ public class CalculateCIDR extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JTextField broadcastAddrView;
+    private javax.swing.JTextField broadcastAddrIPv4View;
     private javax.swing.JButton calculateAddressButton;
-    private javax.swing.JTextField cidrView;
+    private javax.swing.JButton calculateIPv6Button;
+    private javax.swing.JTextField cidrIPv4View;
+    private javax.swing.JTextField cidrIPv6View;
+    private javax.swing.JButton clearButton;
     private javax.swing.JButton clearFields;
-    private javax.swing.JTextField firstIPAddrView;
-    private javax.swing.JTextField inputIPView;
+    private javax.swing.JTextField firstIPAddrIPv4View;
+    private javax.swing.JTextField inputIPv4View;
+    private javax.swing.JTextField inputIPv6View;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -366,14 +509,18 @@ public class CalculateCIDR extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JTabbedPane jTabbedPane4;
     private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField lastIPAddrView;
-    private javax.swing.JTextField netmaskIPView;
-    private javax.swing.JTextField noOfHostsView;
-    private javax.swing.JTextField nwAddrView;
+    private javax.swing.JTextField lastIPAddrIPv4View;
+    private javax.swing.JTextField lastIPAddrIPv6View;
+    private javax.swing.JTextField netmaskIPv4View;
+    private javax.swing.JTextField noOfHostsIPv4View;
+    private javax.swing.JTextField noOfHostsIPv6View;
+    private javax.swing.JTextField nwAddrIPv4View;
+    private javax.swing.JTextField startIPAddrIPv6View;
     // End of variables declaration//GEN-END:variables
 }
