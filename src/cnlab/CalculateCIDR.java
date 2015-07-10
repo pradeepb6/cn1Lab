@@ -123,7 +123,7 @@ public class CalculateCIDR extends javax.swing.JFrame {
             }
         });
 
-        calculateAddressButton.setText("Submit");
+        calculateAddressButton.setText("Calculate");
         calculateAddressButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 calculateAddressButtonActionPerformed(evt);
