@@ -218,7 +218,7 @@ public class CalculateCIDR extends javax.swing.JFrame {
 
         jLabel11.setText("Number of Hosts");
 
-        noOfHostsIPv4View.setEditable(false);
+        noOfHostsIPv6View.setEditable(false);
 
         jLabel12.setText("Starting IP address");
 
@@ -372,7 +372,7 @@ public class CalculateCIDR extends javax.swing.JFrame {
             inputIPv4View.requestFocus();
             return;
         }else{
-                allImplementation1.StrIP2Dec(input);
+//                allImplementation1.StrIP2Dec(input);
                 subnetMask = Integer.parseInt(temp_subnetMask);
                 if(subnetMask<0 || subnetMask > 32){
                     JOptionPane.showMessageDialog(null, "CIDR");
@@ -440,7 +440,7 @@ public class CalculateCIDR extends javax.swing.JFrame {
 		else{
 			System.out.println("Wrong IP Format");			
 		}
-		result = parsed.parse("2605:2700:0:3::4713:93e3");
+		//result = parsed.parse("2605:2700:0:3::4713:93e3");
     }//GEN-LAST:event_calculateIPv6ButtonActionPerformed
 
     private void clearButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_clearButtonActionPerformed
